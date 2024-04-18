@@ -1,0 +1,19 @@
+{
+    "name": "gumlet/php-image-resize",
+    "description": "Resize image package",
+    "require-dev": {
+        "gumlet/php-image-resize": "^2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Gumlet\\PhpImageResize\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "HH00254",
+            "email": "hhochbaum@academic.rrc.ca"
+        }
+    ],
+    "require": {}
+}

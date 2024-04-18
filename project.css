@@ -1,0 +1,583 @@
+/********w************
+    
+    Project 1 Stylesheet
+    Name: Al Hochbaum
+    Date: 2023-04-24
+    Description: CSS for the webpage 
+
+
+*********************/
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap');
+
+html,
+body,
+section,
+p,
+header,
+nav,
+footer,
+div,
+article,
+aside,
+ol,
+ul,
+li,
+h1,
+h6 {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+  max-height: 1600vh;
+    background: linear-gradient(to bottom, #0f2027, #203a43, #2c5364);
+}
+
+#webpage-window-container {		
+	max-width: 1400px;
+	min-width: 400px;
+	min-height: 1400px;
+  max-height: 1600vh;
+	background-color: #fff;
+	border-radius: 8px;
+    margin: auto;
+    box-shadow: 10px 10px 20px rgba(20, 36, 42, 0.2), -10px -10px -20px rgba(20, 36, 42, 0.2);
+    border: 2px solid black;
+	/* box-shadow: 1px 1px 2px rgba(44, 83, 100, 0.2), -1px -1px 2px  rgba(44, 83, 100, 0.19); */
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 5px;
+}
+
+#navigation-and-search-area {
+    border-radius: 8px 8px 0 0 !important;
+    background-color: rgb(30, 8, 31) !important;
+    display: flex !important;
+    justify-content: space-between !important;
+}
+
+.webpage-navigation ul{
+    padding: 10px;
+	display: flex;
+    gap: 1rem;
+	list-style: none;
+}
+
+#login-navigation{
+    margin-top: 5px !important;
+    margin-right: 10px !important;
+}
+
+.menu-member li a {
+    gap: 1rem;
+    text-decoration: none;
+    font:bold;
+    color: aliceblue;
+}
+
+.menu-member li a span{
+    padding-right: 5px;
+}
+
+#background-container{
+    background-image: url("images/games.png") ;
+    width: 100%; /* Full width of the container */
+    min-height: 410px; /* Set the height you want for your banner */
+    background-size: cover; /* Cover the entire area of the banner */
+    background-position: center; /* Center the image within the banner */
+    background-repeat: no-repeat;
+	display: flex;
+	flex-direction: column;
+	color: #fff;
+    /* border: 2px solid black; */
+}
+
+#background-title h1{
+    flex-basis: 100%;
+	font-size: 2.80em;
+	font: bold;
+	letter-spacing: 5px;
+	margin-top: 26px;
+	margin-left: 40px;
+    font-family: 'Cinzel', serif;
+    font-size: 48px; /* Adjust the size as needed */
+    color: #fff; /* Adjust color as needed */
+    text-shadow: 2px 2px rgb(125, 3, 3);
+    /* text-shadow: 1px 1px 2px  #2c5364, -1px -1px 2px  linear-gradient(to bottom, #0f2027, #203a43, #2c5364); */
+  }
+
+.menu-main{
+    background-color: rgb(57, 18, 60);
+    border: 5px rgba(20, 36, 42, 0.2) solid;
+    justify-content: space-evenly;
+    flex-wrap: wrap !important;
+}
+
+.menu-main li{
+    flex-shrink: 1;
+}
+
+.menu-main li a{
+    color: aliceblue;
+    flex-shrink: 1;
+    text-decoration: none;
+}
+
+#main-content-container{
+
+ 
+    margin-left: 10px;
+    margin-right: 10px;
+	display: flex;
+	align-items: stretch;
+	flex-direction: column;
+	flex-wrap: wrap;
+}
+
+body > #page-footer {
+    margin-top: 10px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+} 
+
+#page-footer nav ul{
+    display: flex;
+	justify-content: center;
+}
+
+#page-footer nav ul li{
+	list-style: none;
+}
+
+#page-footer nav ul li{
+	list-style: none;
+}
+
+#page-footer nav ul li a{
+    color: #fff;
+	list-style: none;
+}
+
+#page-footer nav ul li:not(:last-child)::after{
+	margin-left: 5.50px !important;
+	content: '|' !important;	
+	color: #dad1d1 !important;
+} 
+
+#page-footer nav ul li:not(:nth-of-type(1))::before{
+	margin-right: 5.50px !important;
+	content: '' !important;	
+} 
+
+.search-container{
+    background: #fff !important;
+    height: 30px !important;
+    border-radius: 30px !important;
+    margin-top: 10px !important;
+    margin-left: 10px !important;
+    padding: 10px 20px !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    cursor: pointer !important;
+    transition: 0.8s !important;
+    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+    inset -7px -7px 10px 0px rgba(0,0,0,.1),
+   7px 7px 20px 0px rgba(0,0,0,.1),
+   4px 4px 5px 0px rgba(0,0,0,.1) !important;
+   text-shadow:  0px 0px 6px rgba(255,255,255,.3),
+              -4px -4px 6px rgba(116, 125, 136, .2) !important;
+  text-shadow: 2px 2px 3px rgba(255,255,255,0.5) !important;
+  box-shadow:  4px 4px 6px 0 rgba(255,255,255,.3),
+              -4px -4px 6px 0 rgba(116, 125, 136, .2), 
+    inset -4px -4px 6px 0 rgba(255,255,255,.2),
+    inset 4px 4px 6px 0 rgba(0, 0, 0, .2) !important;
+}
+
+.search-container:hover > .search-input{
+    width: 200px !important;
+}
+
+.search-container .search-input{
+    background: transparent !important; 
+    border: none !important;
+    outline:none !important;
+    width: 0px !important;
+    font-weight: 500 !important;
+    font-size: 16px !important;
+    transition: 0.8s !important;
+
+}
+
+.search-container .fas{
+    color:  #3d7995;
+}
+
+@keyframes hoverShake {
+  0% {transform: skew(0deg,0deg);}
+  25% {transform: skew(5deg, 5deg);}
+  75% {transform: skew(-5deg, -5deg);}
+  100% {transform: skew(0deg,0deg);}
+}
+
+.search-container:hover{
+  animation: hoverShake 0.15s linear 3;
+}
+
+/* Modal base styles */
+#loginModal {
+  
+
+  
+  margin: auto !important;
+  max-width: 25% !important;
+  max-height: 50% !important;
+}
+
+.modal::backdrop {
+    background-color: #203a43;
+    opacity: .5;
+}
+
+.modal {
+  position: fixed !important;
+  top: -10px !important;
+  /* additional styles for the modal */
+    width: 500px !important;
+    height: 600px !important;
+    background:white;
+    padding: 0px;
+    border: 8px rgb(45, 132, 129) solid;
+    border-radius: 30px;
+    font-family: 'Arial', sans-serif; /* Adjust to match your website's font */
+  }
+
+/* Modal content box */
+.modal-content {
+  margin-top: 0px !important;
+  min-height: max-content !important;
+  background:white; /* Semi-transparent white */
+
+  /* border: 1px solid #ccc; Light grey border */
+}
+
+.modal-dialog-centered {
+  min-height: min-content !important;
+}
+
+.modal-dialog {
+  margin: auto !important;
+}
+  
+  /* Modal header */
+  .modal-header {
+    border-bottom: 1px solid #ddd; /* Light grey bottom border */
+    padding: 5px;
+  }
+  
+  /* Close button */
+  .close {
+    border-radius: 5px;
+    font-size: 1.4rem;
+    color: #333; /* Dark grey color */
+  }
+  
+  /* Modal body */
+  .modal-body {
+    padding: 20px;
+  }
+  
+  /* Title in modal body */
+  .form-title h4 {
+    margin-bottom: 20px;
+    color: #333; /* Dark grey color */
+  }
+  
+  /* Form input fields */
+  .form-control {
+    border-radius: 5px;
+    border: 1px solid #ccc; /* Light grey border */
+    margin-bottom: 10px !important;
+    padding: 10px ;
+  }
+  
+  /* Login button */
+  .btn-info {
+    background-color: #6c757d; /* Adjust to match your site's button color */
+    color: white;
+    border-radius: 20px;
+    padding: 10px 20px;
+    border: none;
+    margin-top: 10px;
+  }
+  
+  /* Social network buttons */
+  .btn-secondary {
+    background-color: #ddd !important; /* Light grey background */
+    /* color: #333; Dark grey color */
+    border-radius: 20px;
+    padding: 10px;
+    margin: 5px;
+  }
+  
+  /* Tooltip */
+  [data-toggle="tooltip"] {
+    position: relative;
+  }
+  
+  /* Sign up link */
+  .signup-section {
+    padding: 10px;
+  }
+  
+  .signup-section a {
+    color: #007bff; /* Adjust to match your site's link color */
+    text-decoration: none;
+  }
+  
+  /* Delimiter style */
+  .delimiter {
+    color: #aaa; /* Light grey color */
+    margin: 10px 0;
+  }
+
+  /*Payment info*/
+.bg-primary {
+  border-bottom: 2px #2c5364 solid !important;
+}
+
+.bg-info {
+  border-bottom: 2px #2c5364 solid !important;
+}
+
+/*	Radio button styles */
+#cardTypes ul li {
+  margin-bottom: 40px !important;
+  float: inline-start;
+  list-style: none;
+	padding-top: 10px;
+	text-align: center;
+}
+
+#cardTypes label {
+	background: none no-repeat left 50%;
+	line-height: 20px;
+	padding: 0px 0px 0px 30px;
+	width: auto;
+	margin-right: 15px;
+}
+
+#cardTypes input {
+	margin-left: 25px;
+}
+
+#cardTypes label[for='visa'] {
+	background-image: url('images/visa.gif');
+}
+
+#cardTypes label[for='amex'] {
+	background-image: url('images/amex.gif');
+}
+
+#cardTypes label[for='mastercard'] {
+	background-image: url('images/mastercard.gif');
+}
+
+#cardTypes label:hover {
+	cursor: pointer;
+}
+
+#create_account_button {
+  margin-bottom: 10px !important;
+}
+
+
+
+
+/*second profile page*/
+
+/* Profile section styling */
+.profile-bg {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    border-radius: 8px 8px 0 0;
+}
+
+.profile-info {
+    text-align: center;
+}
+
+#profile-image{
+    margin: 0 auto;
+    width: 120px; 
+    height: 120px; 
+    background: no-repeat center center;
+    background-size: cover;
+    border-radius: 50%;
+}
+
+.profile-info-about, .profile-posts {
+    padding: 15px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.profile-intro {
+    background-color: #e9ecef;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+/* Personal Info Navigation Bar */
+.personal-info {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.nav-tabs {
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.nav-tabs .nav-link {
+    border: 1px solid transparent;
+    border-radius: 8px 8px 0 0;
+    margin: 0 2px;
+}
+
+.nav-tabs .nav-link.active {
+    color: #495057;
+    background-color: #fff;
+    border-color: #dee2e6 #dee2e6 #fff;
+}
+
+.tab-content {
+    border: 1px solid #dee2e6;
+    border-radius: 0 0 8px 8px;
+    background-color: #fff;
+    padding: 20px;
+}
+
+/* Adjustments for mobile views */
+@media (max-width: 768px) {
+    .profile, .personal-info {
+        border-radius: 0; /* Full width on small screens */
+        margin-left: -15px; /* Align to the edge of the screen */
+        margin-right: -15px; /* Align to the edge of the screen */
+        box-shadow: none;
+    }
+}
+
+/*New Profile*/
+.container {
+  max-width: 600px;
+}
+
+.header-profile {
+  color: white;
+  margin-top: 1rem;
+  background-color:rgb(54, 99, 117); 
+  border-radius: 0.25rem;
+  
+}
+
+article {
+  background-color:rgb(54, 99, 117); 
+  padding: 1rem;
+  border-radius: 0.25rem;
+  margin-bottom: 1rem;
+}
+
+article > aside {
+  background-color: #ddd;
+  padding: 5px;
+  border: 5px #807c7c solid;
+  word-wrap: break-word;
+}
+
+#profile-button {
+  float: right;
+}
+
+#profile-button a {
+  font-weight: bold;
+  text-decoration:double;
+  color: rgb(14, 14, 15);
+  text-decoration: none;
+}
+
+#profile-container > div {
+  background-color: #333;
+  border-radius: 8px 8px 0 0;
+}
+
+legend {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.form-control {
+  background-color: #fff;
+  border: none;
+  margin-bottom: 1rem; /* Space between input fields */
+}
+
+textarea.form-control {
+  height: auto;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border: none;
+  margin-top: 0.5rem;
+}
+
+/* Adjustments for responsiveness and padding */
+@media (max-width: 768px) {
+  .container {
+      padding: 0 15px;
+  }
+}
+
+
+/*Index styling*/
+section > h2{
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  max-width: 100%;
+  border-radius: 8px 8px 0 0;
+}
+
+#index-container section article {
+  background-color:rgb(54, 99, 117); 
+  padding: 1rem;
+  border-radius: 0.25rem;
+  margin-bottom: 1rem;
+}
+
+/*Pagination*/
+.pagination-container {
+  display: flex;
+}
+
+.pagination a{
+  padding: 5px;
+  border-radius: 0.25rem;
+  border: 2px #363b3d solid !important;
+  list-style: none !important;
+  text-decoration: none !important;
+}
+
+/*Blog formating*/
+
+.blog-article {
+  background-color: #f7f3f3 !important;
+}
+
+.blog-section {
+  background-color: #f7f3f3 !important;
+}
+
